@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright © 2021 Orba. All rights reserved.
+ * @author    info@orba.co
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Orba_MicroFeatures" />
+</config>
