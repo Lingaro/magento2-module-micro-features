@@ -16,9 +16,6 @@ use Magento\Sales\Model\ResourceModel\Order\Status\History\Collection as History
 class AppendCreatedByToAdminhtmlOrderStatusHistoryContent
 {
     /**
-     * @param Order $subject
-     * @param HistoryCollection $result
-     * @return HistoryCollection
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
      */
     public function afterGetStatusHistoryCollection(
