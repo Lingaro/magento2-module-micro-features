@@ -13,7 +13,7 @@ use Magento\Sales\Model\Order;
 use Magento\Sales\Model\Order\Status\History;
 use Magento\Sales\Model\ResourceModel\Order\Status\History\Collection as HistoryCollection;
 
-class AppendCreatedByToAdminhtmlOrderStatusHistoryContent
+class AddAuthorToAdminOrderStatusHistory
 {
     /**
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)

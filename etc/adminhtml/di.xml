@@ -12,7 +12,24 @@
                 type="Orba\MicroFeatures\Plugin\AddCreatedByBeforeOrderStatusHistorySave"/>
     </type>
     <type name="Magento\Sales\Model\Order">
-        <plugin name="Orba_MicroFeatures::AppendCreatedByToAdminhtmlOrderStatusHistoryLabel"
-                type="Orba\MicroFeatures\Plugin\AppendCreatedByToAdminhtmlOrderStatusHistoryContent"/>
+        <plugin name="Orba_MicroFeatures::AddAuthorToAdminOrderStatusHistory"
+                type="Orba\MicroFeatures\Plugin\AddAuthorToAdminOrderStatusHistory"/>
+    </type>
+    <type name="Magento\Config\Block\System\Config\Form\Field">
+        <plugin name="Orba_MicroFeatures::BrandAdminhtmlConfigField"
+                type="Orba\MicroFeatures\Plugin\BrandAdminhtmlConfigField"/>
+    </type>
+    <virtualType name="Orba\MicroFeatures\Model\System\Config\Brand\Orba"
+                 type="Orba\MicroFeatures\Model\System\Config\Brand">
+        <arguments>
+            <argument name="logo" xsi:type="string">Orba_MicroFeatures::images/orba_logo.png</argument>
+        </arguments>
+    </virtualType>
+    <type name="Orba\MicroFeatures\Model\System\Config\BrandProvider">
+        <arguments>
+            <argument name="brands" xsi:type="array">
+                <item name="orba" xsi:type="object">Orba\MicroFeatures\Model\System\Config\Brand\Orba</item>
+            </argument>
+        </arguments>
     </type>
 </config>
