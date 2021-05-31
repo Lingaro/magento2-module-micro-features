@@ -40,7 +40,6 @@ class BrandAdminhtmlConfigField
                 ) . '<span data-config-scope=',
                 $result
             );
-            $result .= $this->assetRepository->getUrl($brand->getLogo());
         }
         return $result;
     }

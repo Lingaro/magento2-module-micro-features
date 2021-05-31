@@ -17,5 +17,14 @@
                 </field>
             </group>
         </section>
+        <section id="catalog">
+            <group id="downloadable">
+                <field id="show_in_account" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Show Link in Customer Account</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <attribute type="brand">orba</attribute>
+                </field>
+            </group>
+        </section>
     </system>
 </config>
