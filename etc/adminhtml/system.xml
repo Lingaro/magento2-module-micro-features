@@ -26,5 +26,25 @@
                 </field>
             </group>
         </section>
+        <section id="login_as_customer">
+            <group id="general">
+                <field id="shopping_assistance_checkbox_needed" translate="label comment" type="select" sortOrder="49" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                    <label>Is Login as Customer opt-in needed</label>
+                    <comment>If set to "No", Login as Customer opt-in checkbox will not be visible on frontend, and admin users will be able to log in as any customer.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <attribute type="brand">orba</attribute>
+                </field>
+                <field id="shopping_assistance_checkbox_title">
+                    <depends>
+                        <field id="shopping_assistance_checkbox_needed">1</field>
+                    </depends>
+                </field>
+                <field id="shopping_assistance_checkbox_tooltip">
+                    <depends>
+                        <field id="shopping_assistance_checkbox_needed">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
     </system>
 </config>

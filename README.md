@@ -33,3 +33,8 @@ You can specify merchant's brand in your custom module for merchant's custom con
 ### 4. Config for hiding Downloadable Products section on Customer Account page
 
 In admin panel, in `Stores > Configuration > Catalog > Downloadable Products Options > Show Link in Customer Account` one can hide Downloadable Products section on Customer Account page.
+
+### 5. Config for disabling necessity of opt-in to Login as Customer feature
+
+In admin panel, in `Stores > Configuration > Customers > Login as Customer > Is Login as Customer opt-in needed` one can disable necessity of opt-in to Login as Customer feature.
+If this config is set to "No", admins will be able to login as any customer.

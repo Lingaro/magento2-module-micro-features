@@ -1,4 +1,6 @@
 "Added by %1","Added by %1"
 "Admin Only","Admin Only"
 "General Settings","General Settings"
+"Is Login as Customer opt-in needed","Is Login as Customer opt-in needed"
+"If set to ""No"", Login as Customer opt-in checkbox will not be visible on frontend, and admin users will be able to log in as any customer.","If set to ""No"", Login as Customer opt-in checkbox will not be visible on frontend, and admin users will be able to log in as any customer."
 "Show Link in Customer Account","Show Link in Customer Account"

@@ -32,4 +32,12 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\LoginAsCustomerAssistance\Model\IsAssistanceEnabled">
+        <plugin name="Orba_MicroFeatures::LoginAsCustomer_CustomizeAdminActionAllowance"
+                type="Orba\MicroFeatures\Plugin\LoginAsCustomer\CustomizeAdminActionAllowance"/>
+    </type>
+    <type name="Magento\Ui\Component\Form\Field">
+        <plugin name="Orba_MicroFeatures::LoginAsCustomer_CustomizeAdminhtmlCheckboxRendering"
+                type="Orba\MicroFeatures\Plugin\LoginAsCustomer\CustomizeAdminhtmlCheckboxRendering"/>
+    </type>
 </config>
