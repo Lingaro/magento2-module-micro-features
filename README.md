@@ -42,3 +42,7 @@ If this config is set to "No", admins will be able to login as any customer.
 ### 6. Config for always expanding cart items block in Checkout
 
 In admin panel, in `Stores > Configuration > Sales > Checkout > Checkout Options > Always Expand Items Block` one can force Items Block to be always expanded on Checkout load.
+
+### 7. Config for disabling Product Comparison
+
+In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > Enable Product Comparison` one can disable Product Comparison add-to buttons and sidebar on frontend.

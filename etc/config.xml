@@ -11,6 +11,9 @@
             <downloadable>
                 <show_in_account>1</show_in_account>
             </downloadable>
+            <frontend>
+                <enable_comparison>1</enable_comparison>
+            </frontend>
         </catalog>
         <login_as_customer>
             <general>

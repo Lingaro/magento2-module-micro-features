@@ -12,4 +12,20 @@
             </argument>
         </arguments>
     </type>
+    <type name="Magento\Catalog\Block\Product\ProductList\Item\AddTo\Compare">
+        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeButtonRenderingOnProductList"
+                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeButtonRenderingOnProductList"/>
+    </type>
+    <type name="Magento\Catalog\Block\Product\View\AddTo\Compare">
+        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeButtonRenderingOnProductView"
+                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeButtonRenderingOnProductView"/>
+    </type>
+    <type name="Magento\Framework\View\Element\Template">
+        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeSidebarRendering"
+                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeSidebarRendering"/>
+    </type>
+    <type name="Magento\Catalog\Helper\Product\Compare">
+        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeHelper"
+                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeHelper"/>
+    </type>
 </config>
