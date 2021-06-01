@@ -5,12 +5,14 @@
  * @author    info@orba.co
  */
 -->
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
         <section id="payment">
             <group id="account">
                 <label>General Settings</label>
-                <field id="admin_only" translate="label" type="multiselect" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                <field id="admin_only" translate="label" type="multiselect" sortOrder="10"
+					   showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Admin Only</label>
                     <source_model>Orba\MicroFeatures\Model\System\Config\Source\PaymentMethod</source_model>
                     <attribute type="brand">orba</attribute>
@@ -19,7 +21,8 @@
         </section>
         <section id="catalog">
             <group id="downloadable">
-                <field id="show_in_account" translate="label" type="select" sortOrder="800" showInDefault="1" showInWebsite="1" canRestore="1">
+                <field id="show_in_account" translate="label" type="select" sortOrder="800"
+					   showInDefault="1" showInWebsite="1" canRestore="1">
                     <label>Show Link in Customer Account</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <attribute type="brand">orba</attribute>
@@ -28,7 +31,8 @@
         </section>
         <section id="login_as_customer">
             <group id="general">
-                <field id="shopping_assistance_checkbox_needed" translate="label comment" type="select" sortOrder="49" showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
+                <field id="shopping_assistance_checkbox_needed" translate="label comment" type="select" sortOrder="49"
+					   showInDefault="1" showInWebsite="0" showInStore="0" canRestore="1">
                     <label>Is Login as Customer opt-in needed</label>
                     <comment>If set to "No", Login as Customer opt-in checkbox will not be visible on frontend, and admin users will be able to log in as any customer.</comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
@@ -43,6 +47,16 @@
                     <depends>
                         <field id="shopping_assistance_checkbox_needed">1</field>
                     </depends>
+                </field>
+            </group>
+        </section>
+        <section id="checkout">
+            <group id="options">
+                <field id="always_expand_items_block" translate="label" type="select" sortOrder="100"
+					   showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Always Expand Items Block</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+					<attribute type="brand">orba</attribute>
                 </field>
             </group>
         </section>

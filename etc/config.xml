@@ -17,5 +17,10 @@
                 <shopping_assistance_checkbox_needed>1</shopping_assistance_checkbox_needed>
             </general>
         </login_as_customer>
+        <checkout>
+            <options>
+                <always_expand_items_block>0</always_expand_items_block>
+            </options>
+        </checkout>
     </default>
 </config>

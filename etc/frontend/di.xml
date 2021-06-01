@@ -5,4 +5,11 @@
         <plugin name="Orba_MicroFeatures::LoginAsCustomer_CustomizeFrontendCheckboxRendering"
                 type="Orba\MicroFeatures\Plugin\LoginAsCustomer\CustomizeFrontendCheckboxRendering"/>
     </type>
+    <type name="Magento\Checkout\Model\CompositeConfigProvider">
+        <arguments>
+            <argument name="configProviders" xsi:type="array">
+                <item name="orba_micro_features_config_provider" xsi:type="object">Orba\MicroFeatures\Model\CheckoutConfigProvider</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
