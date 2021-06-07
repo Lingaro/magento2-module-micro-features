@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright © 2021 Orba. All rights reserved.
+ * @author    info@orba.co
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="orba.micro_features.input_mask.script"
+                   template="Orba_MicroFeatures::customer/address/form/input_mask.phtml"
+                   after="customer_address_edit">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Orba\MicroFeatures\ViewModel\Customer\Address\Form\InputMask</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

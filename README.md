@@ -46,3 +46,9 @@ In admin panel, in `Stores > Configuration > Sales > Checkout > Checkout Options
 ### 7. Config for disabling Product Comparison
 
 In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > Enable Product Comparison` one can disable Product Comparison add-to buttons and sidebar on frontend.
+
+### 8. Config for defining input masks for Customer phone number and postcode
+
+In admin panel, in `Stores > Configuration > Customers > Customer Configuration > Name and Address Options > Telephone Input Mask / Postcode Input Mask` one can add input masks for phone number and postcode fields visible in Address Book (in My Account) and in Checkout.
+
+Watchout: The config is for projects in which in one website you can create addresses for one specific country. For multi-country websites you need to customize `\Orba\MicroFeatures\ViewModel\Customer\Address\Form\InputMask`.

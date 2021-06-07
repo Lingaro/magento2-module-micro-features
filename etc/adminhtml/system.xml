@@ -68,5 +68,21 @@
                 </field>
             </group>
         </section>
+        <section id="customer">
+            <group id="address">
+                <field id="telephone_input_mask" translate="label comment" type="text" sortOrder="800"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Telephone Input Mask</label>
+                    <comment>Example: 999-999-9999</comment>
+                    <attribute type="brand">orba</attribute>
+                </field>
+                <field id="postcode_input_mask" translate="label comment" type="text" sortOrder="810"
+                       showInDefault="1" showInWebsite="1" canRestore="1">
+                    <label>Postcode Input Mask</label>
+                    <comment>Example: 99999[-9999]</comment>
+                    <attribute type="brand">orba</attribute>
+                </field>
+            </group>
+        </section>
     </system>
 </config>
