@@ -1,0 +1,16 @@
+# Changelog
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.0.0] - 2021-07-15
+### Added
+- Feature: Admin name added to order comment [ZZ12-2](https://orba.atlassian.net/browse/ZZ12-2)
+- Feature: Config for defining admin only payment methods [ZZ12-3](https://orba.atlassian.net/browse/ZZ12-3)
+- Feature: Possibility to brand system.xml config fields [ZZ12-9](https://orba.atlassian.net/browse/ZZ12-9)
+- Feature: Config for hiding Downloadable Products section on Customer Account page [ZZ12-4](https://orba.atlassian.net/browse/ZZ12-4)
+- Feature: Config for disabling necessity of opt-in to Login as Customer feature [ZZ12-6](https://orba.atlassian.net/browse/ZZ12-6)
+- Feature: Config for always expanding cart items block in Checkout [ZZ12-7](https://orba.atlassian.net/browse/ZZ12-7)
+- Feature: Config for disabling Product Comparison [ZZ12-5](https://orba.atlassian.net/browse/ZZ12-5)
+- Feature: Config for defining input masks for Customer phone number and postcode [ZZ12-8](https://orba.atlassian.net/browse/ZZ12-8)

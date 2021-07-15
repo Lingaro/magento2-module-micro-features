@@ -1,6 +1,6 @@
 {
   "name": "orba/magento2-module-micro-features",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Magento 2 Micro Features Module",
   "require": {
     "php": "~7.4.0",
