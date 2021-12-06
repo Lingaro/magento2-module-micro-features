@@ -16,6 +16,9 @@ class BrandProvider
     /** @var Brand[] */
     private array $brands;
 
+    /**
+     * @param Brand[] $brands
+     */
     public function __construct(array $brands = [])
     {
         foreach ($brands as $brand) {

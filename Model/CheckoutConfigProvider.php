@@ -20,6 +20,9 @@ class CheckoutConfigProvider implements ConfigProviderInterface
         $this->config = $config;
     }
 
+    /**
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint
+     */
     public function getConfig(): array
     {
         return [

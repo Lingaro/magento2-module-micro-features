@@ -21,6 +21,10 @@ class PaymentMethod implements OptionSourceInterface
         $this->paymentHelper = $paymentHelper;
     }
 
+    /**
+     * Returns payment methods in the following format: [['value' => '<value>', 'label' => '<label>'], ...]
+     * @return array<int, array<string, string>>
+     */
     public function toOptionArray(): array
     {
         return $this->paymentHelper->getPaymentMethodList(true, true, true);

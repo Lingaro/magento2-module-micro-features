@@ -30,6 +30,9 @@ class Config
         $this->scopeConfig = $scopeConfig;
     }
 
+    /**
+     * @return string[]
+     */
     public function getAdminOnlyPaymentMethods(): array
     {
         $value = $this->scopeConfig->getValue(static::XML_PATH_PAYMENT_ACCOUNT_ADMIN_ONLY);
@@ -46,6 +49,9 @@ class Config
         );
     }
 
+    /**
+     * @param null|int|string $storeId
+     */
     public function shouldAlwaysExpandItemsBlockOnCheckout($storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(
@@ -55,6 +61,9 @@ class Config
         );
     }
 
+    /**
+     * @param null|int|string $storeId
+     */
     public function isProductComparisonEnabled($storeId = null): bool
     {
         return $this->scopeConfig->isSetFlag(
@@ -64,6 +73,9 @@ class Config
         );
     }
 
+    /**
+     * @param null|int|string $storeId
+     */
     public function getTelephoneInputMask($storeId = null): string
     {
         return (string) $this->scopeConfig->getValue(
@@ -73,6 +85,9 @@ class Config
         );
     }
 
+    /**
+     * @param null|int|string $storeId
+     */
     public function getPostcodeInputMask($storeId = null): string
     {
         return (string) $this->scopeConfig->getValue(

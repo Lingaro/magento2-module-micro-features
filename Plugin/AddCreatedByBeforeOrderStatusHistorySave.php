@@ -24,12 +24,11 @@ class AddCreatedByBeforeOrderStatusHistorySave
         $this->session = $session;
     }
 
-    public function beforeSave(History $subject): array
+    public function beforeSave(History $subject): void
     {
         $user = $this->session->getUser();
         if ($user) {
             $subject->setData('created_by', $user->getName());
         }
-        return [];
     }
 }

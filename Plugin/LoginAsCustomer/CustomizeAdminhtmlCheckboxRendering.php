@@ -21,6 +21,10 @@ class CustomizeAdminhtmlCheckboxRendering
         $this->config = $config;
     }
 
+    /**
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint
+     */
     public function afterGetConfiguration(Field $subject, array $result): array
     {
         if ($subject->getName() === 'extension_attributes.assistance_allowed'

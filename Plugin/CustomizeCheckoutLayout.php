@@ -26,6 +26,8 @@ class CustomizeCheckoutLayout
 
     /**
      * @SuppressWarnings(PHPMD.UnusedFormalParameter)
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint
      */
     public function afterProcess(LayoutProcessor $subject, array $result): array
     {
@@ -34,6 +36,10 @@ class CustomizeCheckoutLayout
         return $result;
     }
 
+    /**
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ReturnTypeHint
+     * @phpcsSuppress SlevomatCodingStandard.TypeHints.ParameterTypeHint
+     */
     private function setFieldInputMask(string $field, string $mask, array $jsLayout): array
     {
         if (!$mask) {
