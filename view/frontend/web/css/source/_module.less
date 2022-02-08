@@ -1,0 +1,132 @@
+/**
+ * @copyright Copyright © 2022 Orba. All rights reserved.
+ * @author    info@orba.co
+ */
+
+@orba-upsert-qty__control__height: 32px;
+@orba-upsert-qty__control__margin-bottom: 10px;
+@orba-upsert-qty__control__font-size: 14px;
+@orba-upsert-qty__input__width: 45px;
+@orba-upsert-qty__button__width: 32px;
+@orba-upsert-qty__button__padding: 0;
+@orba-upsert-qty__action-button__padding: 10px;
+@orba-upsert-qty__success__font-size: 10px;
+@orba-upsert-qty__success__line-height: 20px;
+@orba-upsert-qty__success__color: green;
+
+@orba-upsert-qty__product_view__scale: 1.5;
+@orba-upsert-qty__product_view__padding: 0 0 10px;
+@orba-upsert-qty__product_view__control__height: @orba-upsert-qty__control__height * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__control__margin-bottom: @orba-upsert-qty__control__margin-bottom * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__control__font-size: @orba-upsert-qty__control__font-size * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__input__width: @orba-upsert-qty__input__width * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__button__width: @orba-upsert-qty__button__width * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__button__padding: 0;
+@orba-upsert-qty__product_view__action-button__padding: @orba-upsert-qty__action-button__padding * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__success__font-size: @orba-upsert-qty__success__font-size * @orba-upsert-qty__product_view__scale;
+@orba-upsert-qty__product_view__success__line-height: @orba-upsert-qty__success__line-height * @orba-upsert-qty__product_view__scale;
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+  .orba-upsert-qty-wrapper {
+    position: relative;
+
+    .qty-input-button {
+      .lib-button(
+        @_button-width: @orba-upsert-qty__button__width,
+        @_button-padding: @orba-upsert-qty__button__padding,
+        @_button-margin: 0 0 @orba-upsert-qty__control__margin-bottom,
+        @_button-font-size: @orba-upsert-qty__control__font-size
+      );
+      height: @orba-upsert-qty__control__height;
+      vertical-align: top;
+
+      &[name="sub-button"] {
+        border-right: 0;
+      }
+
+      &[name="add-button"] {
+        border-left: 0;
+      }
+    }
+
+    .qty {
+      width: @orba-upsert-qty__input__width;
+      height: @orba-upsert-qty__control__height;
+      margin: 0 0 @orba-upsert-qty__control__margin-bottom;
+      font-size: @orba-upsert-qty__control__font-size;
+      text-align: center;
+    }
+
+    .orba-upsert-qty-success {
+      opacity: 0;
+      position: absolute;
+      top: -@orba-upsert-qty__success__line-height;
+      line-height: @orba-upsert-qty__success__line-height;
+      .lib-font-size(@orba-upsert-qty__success__font-size);
+      color: @orba-upsert-qty__success__color;
+      transition: opacity 0.5s ease-out;
+      white-space: nowrap;
+
+      &.active {
+        opacity: 1;
+      }
+    }
+
+    .to-cart-button {
+      height: @orba-upsert-qty__control__height;
+      padding: 0 @orba-upsert-qty__action-button__padding;
+      margin: 0 0 @orba-upsert-qty__control__margin-bottom;
+      font-size: @orba-upsert-qty__control__font-size;
+      vertical-align: top;
+    }
+  }
+
+  .catalog-product-view {
+    .orba-upsert-qty-wrapper {
+      padding: @orba-upsert-qty__product_view__padding;
+
+      .qty-input-button {
+        .lib-button(
+          @_button-width: @orba-upsert-qty__product_view__button__width,
+          @_button-padding: @orba-upsert-qty__product_view__button__padding,
+          @_button-margin: 0 0 @orba-upsert-qty__product_view__control__margin-bottom,
+          @_button-font-size: @orba-upsert-qty__product_view__control__font-size
+        );
+        height: @orba-upsert-qty__product_view__control__height;
+        vertical-align: top;
+      }
+
+      .qty {
+        width: @orba-upsert-qty__product_view__input__width;
+        height: @orba-upsert-qty__product_view__control__height;
+        margin: 0 0 @orba-upsert-qty__product_view__control__margin-bottom;
+        font-size: @orba-upsert-qty__product_view__control__font-size;
+      }
+
+      .orba-upsert-qty-success {
+        top: -@orba-upsert-qty__product_view__success__line-height;
+        line-height: @orba-upsert-qty__product_view__success__line-height;
+        .lib-font-size(@orba-upsert-qty__product_view__success__font-size);
+      }
+
+      .to-cart-button {
+        height: @orba-upsert-qty__product_view__control__height;
+        padding: 0 @orba-upsert-qty__product_view__action-button__padding;
+        margin: 0 0 @orba-upsert-qty__product_view__control__margin-bottom;
+        font-size: @orba-upsert-qty__product_view__control__font-size;
+      }
+    }
+  }
+
+  .catalog-product_compare-index {
+    .orba-upsert-qty-wrapper {
+      .qty-input-button, .qty, .to-cart-button {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

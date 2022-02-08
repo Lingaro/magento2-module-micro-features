@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
+ * @copyright Copyright © 2021 Orba Sp. z o.o. All rights reserved.
  * @author    info@orba.co
  */
 

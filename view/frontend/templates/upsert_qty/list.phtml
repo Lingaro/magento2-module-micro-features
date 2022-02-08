@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @copyright Copyright © 2022 Orba Sp. z o.o. All rights reserved.
+ * @author    info@orba.co
+ */
+
+declare(strict_types=1);
+
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Orba\MicroFeatures\ViewModel\UpsertQtyInitializer $viewModel */
+$viewModel = $block->getViewModel();
+?>
+<?php if ($viewModel->getProduct() && $viewModel->isEnabled() && $viewModel->getProduct()->isSaleable()): ?>
+    <?php $targetSelector = 'form[data-product-sku="'
+        . $viewModel->getProduct()->getSku() . '"] .action.tocart.primary'; ?>
+<div data-mage-init='<?= $escaper->escapeHtmlAttr($viewModel->getJsonConfig($targetSelector)) ?>'></div>
+    <style>
+        <?= /* @noEscape */ $targetSelector ?> {
+            display: none;
+        }
+    </style>
+<?php endif; ?>

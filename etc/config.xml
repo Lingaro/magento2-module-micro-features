@@ -13,6 +13,7 @@
             </downloadable>
             <frontend>
                 <enable_comparison>1</enable_comparison>
+                <enable_upsert_qty>0</enable_upsert_qty>
             </frontend>
         </catalog>
         <login_as_customer>

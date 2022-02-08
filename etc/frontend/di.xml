@@ -38,4 +38,8 @@
         <plugin name="Orba_MicroFeatures::CustomizeCheckoutLayout"
                 type="Orba\MicroFeatures\Plugin\CustomizeCheckoutLayout"/>
     </type>
+    <type name="Magento\Catalog\Block\Product\AbstractProduct">
+        <plugin name="Orba_MicroFeatures::AddUpsertQtyInitializationToProductDetails"
+                type="Orba\MicroFeatures\Plugin\AddUpsertQtyScriptToProductDetails"/>
+    </type>
 </config>

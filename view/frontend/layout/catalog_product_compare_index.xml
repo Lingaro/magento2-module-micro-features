@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright © 2022 Orba. All rights reserved.
+ * @author    info@orba.co
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Catalog\Block\Product\Compare\ListCompare"
+                   name="catalog.compare.list.orba.upsert_qty"
+                   ifconfig="catalog/frontend/enable_upsert_qty"
+                   template="Orba_MicroFeatures::upsert_qty/compare.phtml"
+                   after="catalog.compare.list">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Orba\MicroFeatures\ViewModel\UpsertQtyInitializer</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

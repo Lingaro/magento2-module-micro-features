@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright Copyright © 2022 Orba. All rights reserved.
+ * @author    info@orba.co
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.form.content">
+            <block class="Magento\Catalog\Block\Product\View"
+                   name="product.info.addtocart.orba.upsert_qty"
+                   ifconfig="catalog/frontend/enable_upsert_qty"
+                   template="Orba_MicroFeatures::upsert_qty/view.phtml"
+                   after="product.info.addtocart">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Orba\MicroFeatures\ViewModel\UpsertQtyInitializer</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

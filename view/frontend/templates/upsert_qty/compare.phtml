@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @copyright Copyright © 2022 Orba Sp. z o.o. All rights reserved.
+ * @author    info@orba.co
+ */
+
+declare(strict_types=1);
+
+/** @var \Magento\Catalog\Block\Product\Compare\ListCompare $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Orba\MicroFeatures\ViewModel\UpsertQtyInitializer $viewModel */
+$viewModel = $block->getViewModel();
+?>
+<?php foreach ($block->getItems() as $product): ?>
+    <?php $viewModel->setProduct($product); ?>
+    <?php if ($viewModel->isEnabled() && $viewModel->getProduct()->isSaleable()): ?>
+        <?php $targetSelector = '.price-box[data-product-id="'
+            . $viewModel->getProduct()->getId() . '"] + .product-item-actions form[data-role="tocart-form"]'; ?>
+        <div data-mage-init='<?= $escaper->escapeHtmlAttr($viewModel->getJsonConfig($targetSelector)) ?>'></div>
+        <style>
+            <?= /* @noEscape */ $targetSelector ?> {
+                display: none;
+            }
+        </style>
+    <?php endif; ?>
+<?php endforeach; ?>

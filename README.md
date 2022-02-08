@@ -52,3 +52,7 @@ In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > En
 In admin panel, in `Stores > Configuration > Customers > Customer Configuration > Name and Address Options > Telephone Input Mask / Postcode Input Mask` one can add input masks for phone number and postcode fields visible in Address Book (in My Account) and in Checkout.
 
 Watchout: The config is for projects in which in one website you can create addresses for one specific country. For multi-country websites you need to customize `\Orba\MicroFeatures\ViewModel\Customer\Address\Form\InputMask`.
+
+### 9. Config for enabling "Upsert quantity" widget in place of "Add to cart" buttons
+
+In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > Enable Upsert Quantity` one can enable "Upsert Quantity" widget. When the feature is enabled, all "Add to cart" buttons for simple, virtual and downloadable products on catalog pages (listings, details, comparison list, product widgets) will be replaced with "Upsert Quantity" widgets that are synchronized with mini-cart and always show the quantity that is currently inside user's cart.
