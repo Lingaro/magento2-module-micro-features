@@ -21,18 +21,18 @@ class SwitchNewsletterNewActionToAjax
 {
     private Config $config;
     private ManagerInterface $messageManager;
-    private InterpretationStrategyInterface $messageInterpretationStrategy;
+    private InterpretationStrategyInterface $messageInterpreter;
     private ResultFactory $resultFactory;
 
     public function __construct(
         Config $config,
         ManagerInterface $messageManager,
-        InterpretationStrategyInterface $messageInterpretationStrategy,
+        InterpretationStrategyInterface $messageInterpreter,
         ResultFactory $resultFactory
     ) {
         $this->config = $config;
         $this->messageManager = $messageManager;
-        $this->messageInterpretationStrategy = $messageInterpretationStrategy;
+        $this->messageInterpreter = $messageInterpreter;
         $this->resultFactory = $resultFactory;
     }
 
@@ -49,7 +49,7 @@ class SwitchNewsletterNewActionToAjax
         $message = $messagesCollection->getLastAddedMessage();
         $data = [
             'type' => $message->getType(),
-            'message' => $this->messageInterpretationStrategy->interpret($message)
+            'message' => $this->messageInterpreter->interpret($message)
         ];
         $messagesCollection->deleteMessageByIdentifier($message->getIdentifier());
         return $this->resultFactory->create(ResultFactory::TYPE_JSON)->setData($data);
