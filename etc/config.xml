@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
+ * @copyright Copyright © 2022 Orba. All rights reserved.
  * @author    info@orba.co
  */
 -->
@@ -26,5 +26,10 @@
                 <always_expand_items_block>0</always_expand_items_block>
             </options>
         </checkout>
+        <newsletter>
+            <general>
+                <enable_ajax>0</enable_ajax>
+            </general>
+        </newsletter>
     </default>
 </config>

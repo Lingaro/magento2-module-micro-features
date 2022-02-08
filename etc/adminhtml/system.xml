@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
+ * @copyright Copyright © 2022 Orba. All rights reserved.
  * @author    info@orba.co
  */
 -->
@@ -86,6 +86,19 @@
                        showInDefault="1" showInWebsite="1" canRestore="1">
                     <label>Postcode Input Mask</label>
                     <comment>Example: 99999[-9999]</comment>
+                    <attribute type="brand">orba</attribute>
+                </field>
+            </group>
+        </section>
+        <section id="newsletter">
+            <group id="general">
+                <field id="enable_ajax" translate="label comment" type="select" sortOrder="100"
+                       showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable AJAX in Footer Form</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <depends>
+                        <field id="newsletter/general/active">1</field>
+                    </depends>
                     <attribute type="brand">orba</attribute>
                 </field>
             </group>

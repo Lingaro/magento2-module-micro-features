@@ -25,6 +25,7 @@ class Config
     const XML_PATH_CATALOG_FRONTEND_ENABLE_UPSERT_QTY = 'catalog/frontend/enable_upsert_qty';
     const XML_PATH_CUSTOMER_ADDRESS_TELEPHONE_INPUT_MASK = 'customer/address/telephone_input_mask';
     const XML_PATH_CUSTOMER_ADDRESS_POSTCODE_INPUT_MASK = 'customer/address/postcode_input_mask';
+    const XML_PATH_NEWSLETTER_GENERAL_ENABLE_AJAX = 'newsletter/general/enable_ajax';
 
     public function __construct(ScopeConfigInterface $scopeConfig)
     {
@@ -105,6 +106,18 @@ class Config
     {
         return (string) $this->scopeConfig->getValue(
             static::XML_PATH_CUSTOMER_ADDRESS_POSTCODE_INPUT_MASK,
+            ScopeInterface::SCOPE_STORE,
+            $storeId
+        );
+    }
+
+    /**
+     * @param null|int|string $storeId
+     */
+    public function isAjaxNewsletterEnabled($storeId = null): bool
+    {
+        return $this->scopeConfig->isSetFlag(
+            static::XML_PATH_NEWSLETTER_GENERAL_ENABLE_AJAX,
             ScopeInterface::SCOPE_STORE,
             $storeId
         );

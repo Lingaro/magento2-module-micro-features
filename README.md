@@ -56,3 +56,7 @@ Watchout: The config is for projects in which in one website you can create addr
 ### 9. Config for enabling "Upsert quantity" widget in place of "Add to cart" buttons
 
 In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > Enable Upsert Quantity` one can enable "Upsert Quantity" widget. When the feature is enabled, all "Add to cart" buttons for simple, virtual and downloadable products on catalog pages (listings, details, comparison list, product widgets) will be replaced with "Upsert Quantity" widgets that are synchronized with mini-cart and always show the quantity that is currently inside user's cart.
+
+### 10. Config for enabling AJAX for Footer Newsletter form
+
+In admin panel, in `Stores > Configuration > Customers > Newsletter > General Options > Enable AJAX in Footer Form` one can force Footer Newsletter form to use AJAX and not reload page after each submission. 
