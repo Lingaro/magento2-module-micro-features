@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2022-02-08
+### Added
+- Feature: Config for enabling "Upsert quantity" widget in place of "Add to cart" buttons [ZZ12-89](https://orba.atlassian.net/browse/ZZ12-89)
+- Feature: Config for enabling AJAX for Footer Newsletter form [ZZ12-24](https://orba.atlassian.net/browse/ZZ12-24)
+
 ## [1.0.1] - 2021-12-06
 ### Changed
 - Minor code polishing to fulfil OrbaMagento2 coding standards [ZZ12-87](https://orba.atlassian.net/browse/ZZ12-87) 
