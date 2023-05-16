@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="footer">
-            <block name="orba.micro_features.newsletter.script"
-                   template="Orba_MicroFeatures::newsletter/script.phtml"
+            <block name="lingaro.micro_features.newsletter.script"
+                   template="Lingaro_MicroFeatures::newsletter/script.phtml"
                    ifconfig="newsletter/general/enable_ajax"
                    after="form.subscribe" />
         </referenceContainer>

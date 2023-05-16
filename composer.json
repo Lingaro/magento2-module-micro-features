@@ -1,5 +1,5 @@
 {
-  "name": "orba/magento2-module-micro-features",
+  "name": "lingaro/magento2-module-micro-features",
   "version": "1.0.1",
   "description": "Magento 2 Micro Features Module",
   "require": {
@@ -12,7 +12,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Orba\\MicroFeatures\\": ""
+      "Lingaro\\MicroFeatures\\": ""
     }
   }
 }

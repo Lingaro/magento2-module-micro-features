@@ -1,6 +1,6 @@
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 define(['jquery'], function ($) {
@@ -12,8 +12,8 @@ define(['jquery'], function ($) {
             if (this.inputMask) {
                 require([
                     'Magento_Ui/js/lib/view/utils/async',
-                    'Orba_MicroFeatures/js/vendor/jquery.inputmask',
-                    'Orba_MicroFeatures/js/validation/input-mask'
+                    'Lingaro_MicroFeatures/js/vendor/jquery.inputmask',
+                    'Lingaro_MicroFeatures/js/validation/input-mask'
                 ], this.inputMaskHandle.bind(this));
             }
 

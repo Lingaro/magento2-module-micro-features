@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -10,12 +10,12 @@
     <body>
         <referenceContainer name="content">
             <block class="Magento\Catalog\Block\Product\Compare\ListCompare"
-                   name="catalog.compare.list.orba.upsert_qty"
+                   name="catalog.compare.list.lingaro.upsert_qty"
                    ifconfig="catalog/frontend/enable_upsert_qty"
-                   template="Orba_MicroFeatures::upsert_qty/compare.phtml"
+                   template="Lingaro_MicroFeatures::upsert_qty/compare.phtml"
                    after="catalog.compare.list">
                 <arguments>
-                    <argument name="view_model" xsi:type="object">Orba\MicroFeatures\ViewModel\UpsertQtyInitializer</argument>
+                    <argument name="view_model" xsi:type="object">Lingaro\MicroFeatures\ViewModel\UpsertQtyInitializer</argument>
                 </arguments>
             </block>
         </referenceContainer>

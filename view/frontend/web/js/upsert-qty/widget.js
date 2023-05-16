@@ -1,6 +1,6 @@
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 define([
@@ -11,7 +11,7 @@ define([
 ], function ($, $t, customerData, alert) {
     'use strict';
 
-    $.widget('orba.upsertQty',{
+    $.widget('lingaro.upsertQty',{
 
         _create: function () {
             var self = this;
@@ -148,7 +148,7 @@ define([
          */
         createSuccessBlock: function () {
             var block = $('<div>');
-            block.addClass('orba-upsert-qty-success');
+            block.addClass('lingaro-upsert-qty-success');
             block.text($t('Cart updated successfully!'));
 
             return block;
@@ -231,5 +231,5 @@ define([
         }
     });
 
-    return $.orba.upsertQty;
+    return $.lingaro.upsertQty;
 });

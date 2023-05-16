@@ -1,22 +1,22 @@
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 var config = {
     "map": {
         "*": {
-            "orba/inputMask": "Orba_MicroFeatures/js/input-mask",
-            "orba/validationAdder": "Orba_MicroFeatures/js/validation-adder"
+            "lingaro/inputMask": "Lingaro_MicroFeatures/js/input-mask",
+            "lingaro/validationAdder": "Lingaro_MicroFeatures/js/validation-adder"
         }
     },
     "config": {
         "mixins": {
             "Magento_Ui/js/form/element/abstract": {
-                "Orba_MicroFeatures/js/form/element/abstract-mixin": true
+                "Lingaro_MicroFeatures/js/form/element/abstract-mixin": true
             },
             "mage/validation": {
-                "Orba_MicroFeatures/js/mage/validation-mixin": true
+                "Lingaro_MicroFeatures/js/mage/validation-mixin": true
             }
         }
     }

@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @copyright Copyright © 2022 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Plugin;
+namespace Lingaro\MicroFeatures\Plugin;
 
 use Magento\Framework\Controller\Result\Json;
 use Magento\Framework\Controller\Result\Redirect;
@@ -15,7 +15,7 @@ use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Message\ManagerInterface;
 use Magento\Framework\View\Element\Message\InterpretationStrategyInterface;
 use Magento\Newsletter\Controller\Subscriber\NewAction;
-use Orba\MicroFeatures\Model\Config;
+use Lingaro\MicroFeatures\Model\Config;
 
 class SwitchNewsletterNewActionToAjax
 {

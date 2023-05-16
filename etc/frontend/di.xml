@@ -1,49 +1,49 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\LoginAsCustomerAssistance\ViewModel\ShoppingAssistanceViewModel">
-        <plugin name="Orba_MicroFeatures::LoginAsCustomer_CustomizeFrontendCheckboxRendering"
-                type="Orba\MicroFeatures\Plugin\LoginAsCustomer\CustomizeFrontendCheckboxRendering"/>
+        <plugin name="Lingaro_MicroFeatures::LoginAsCustomer_CustomizeFrontendCheckboxRendering"
+                type="Lingaro\MicroFeatures\Plugin\LoginAsCustomer\CustomizeFrontendCheckboxRendering"/>
     </type>
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="orba_micro_features_config_provider" xsi:type="object">Orba\MicroFeatures\Model\CheckoutConfigProvider</item>
+                <item name="Lingaro_micro_features_config_provider" xsi:type="object">Lingaro\MicroFeatures\Model\CheckoutConfigProvider</item>
             </argument>
         </arguments>
     </type>
     <type name="Magento\Catalog\Block\Product\ProductList\Item\AddTo\Compare">
-        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeButtonRenderingOnProductList"
-                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeButtonRenderingOnProductList"/>
+        <plugin name="Lingaro_MicroFeatures::ProductCompare_CustomizeButtonRenderingOnProductList"
+                type="Lingaro\MicroFeatures\Plugin\ProductCompare\CustomizeButtonRenderingOnProductList"/>
     </type>
     <type name="Magento\Catalog\Block\Product\View\AddTo\Compare">
-        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeButtonRenderingOnProductView"
-                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeButtonRenderingOnProductView"/>
+        <plugin name="Lingaro_MicroFeatures::ProductCompare_CustomizeButtonRenderingOnProductView"
+                type="Lingaro\MicroFeatures\Plugin\ProductCompare\CustomizeButtonRenderingOnProductView"/>
     </type>
     <type name="Magento\Framework\View\Element\Template">
-        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeSidebarRendering"
-                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeSidebarRendering"/>
+        <plugin name="Lingaro_MicroFeatures::ProductCompare_CustomizeSidebarRendering"
+                type="Lingaro\MicroFeatures\Plugin\ProductCompare\CustomizeSidebarRendering"/>
     </type>
     <type name="Magento\Catalog\Helper\Product\Compare">
-        <plugin name="Orba_MicroFeatures::ProductCompare_CustomizeHelper"
-                type="Orba\MicroFeatures\Plugin\ProductCompare\CustomizeHelper"/>
+        <plugin name="Lingaro_MicroFeatures::ProductCompare_CustomizeHelper"
+                type="Lingaro\MicroFeatures\Plugin\ProductCompare\CustomizeHelper"/>
     </type>
     <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
-        <plugin name="Orba_MicroFeatures::CustomizeCheckoutLayout"
-                type="Orba\MicroFeatures\Plugin\CustomizeCheckoutLayout"/>
+        <plugin name="Lingaro_MicroFeatures::CustomizeCheckoutLayout"
+                type="Lingaro\MicroFeatures\Plugin\CustomizeCheckoutLayout"/>
     </type>
     <type name="Magento\Catalog\Block\Product\AbstractProduct">
-        <plugin name="Orba_MicroFeatures::AddUpsertQtyInitializationToProductDetails"
-                type="Orba\MicroFeatures\Plugin\AddUpsertQtyScriptToProductDetails"/>
+        <plugin name="Lingaro_MicroFeatures::AddUpsertQtyInitializationToProductDetails"
+                type="Lingaro\MicroFeatures\Plugin\AddUpsertQtyScriptToProductDetails"/>
     </type>
     <type name="Magento\Newsletter\Controller\Subscriber\NewAction">
-        <plugin name="Orba_MicroFeatures::SwitchNewsletterNewActionToAjax"
-                type="Orba\MicroFeatures\Plugin\SwitchNewsletterNewActionToAjax"/>
+        <plugin name="Lingaro_MicroFeatures::SwitchNewsletterNewActionToAjax"
+                type="Lingaro\MicroFeatures\Plugin\SwitchNewsletterNewActionToAjax"/>
     </type>
 </config>
