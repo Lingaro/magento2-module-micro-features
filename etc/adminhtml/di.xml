@@ -22,13 +22,13 @@
     <virtualType name="Lingaro\MicroFeatures\Model\System\Config\Brand\Lingaro"
                  type="Lingaro\MicroFeatures\Model\System\Config\Brand">
         <arguments>
-            <argument name="logo" xsi:type="string">Lingaro_MicroFeature::images/lingaro_logo.png</argument>
+            <argument name="logo" xsi:type="string">Lingaro_MicroFeatures::images/lingaro_logo.png</argument>
         </arguments>
     </virtualType>
     <type name="Lingaro\MicroFeatures\Model\System\Config\BrandProvider">
         <arguments>
             <argument name="brands" xsi:type="array">
-                <item name="Lingaro" xsi:type="object">Lingaro\MicroFeatures\Model\System\Config\Brand\Lingaro</item>
+                <item name="lingaro" xsi:type="object">Lingaro\MicroFeatures\Model\System\Config\Brand\Lingaro</item>
             </argument>
         </arguments>
     </type>

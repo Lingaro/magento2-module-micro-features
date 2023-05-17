@@ -14,7 +14,7 @@
     <type name="Magento\Checkout\Model\CompositeConfigProvider">
         <arguments>
             <argument name="configProviders" xsi:type="array">
-                <item name="Lingaro_micro_features_config_provider" xsi:type="object">Lingaro\MicroFeatures\Model\CheckoutConfigProvider</item>
+                <item name="lingaro_micro_features_config_provider" xsi:type="object">Lingaro\MicroFeatures\Model\CheckoutConfigProvider</item>
             </argument>
         </arguments>
     </type>
