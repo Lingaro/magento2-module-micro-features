@@ -7,7 +7,7 @@
     "magento/framework": "103.0.*"
   },
   "type": "magento2-module",
-  "license": "proprietary",
+  "license": "MIT",
   "authors": [
       {
           "name": "Lingaro sp. z o.o.",
