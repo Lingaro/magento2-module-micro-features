@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2023-05-17
+### Changed
+- Rebranded the module to Lingaro with new major version released
+- Changed the css class from orba to lingaro.
+- Changed the branding logo from Orba to Lingaro
+
 ## [1.0.1] - 2021-12-06
 ### Changed
 - Minor code polishing to fulfil OrbaMagento2 coding standards [ZZ12-87](https://orba.atlassian.net/browse/ZZ12-87) 
@@ -18,9 +24,3 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Feature: Config for always expanding cart items block in Checkout [ZZ12-7](https://orba.atlassian.net/browse/ZZ12-7)
 - Feature: Config for disabling Product Comparison [ZZ12-5](https://orba.atlassian.net/browse/ZZ12-5)
 - Feature: Config for defining input masks for Customer phone number and postcode [ZZ12-8](https://orba.atlassian.net/browse/ZZ12-8)
-
-## [2.0.0] - 2023-05-17
-### Changed
-- Rebranded the module to Lingaro with new major version released
-- Changed the css class from orba to lingaro.
-- Changed the branding logo from Orba to Lingaro
