@@ -1,6 +1,6 @@
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 define([
@@ -13,7 +13,7 @@ define([
     'use strict';
 
     $.validator.addMethod(
-        'orba-input-mask-complete',
+        'lingaro-input-mask-complete',
         function (value, element) {
             return value === '' || $(element).inputmask("isComplete");
         },
@@ -21,7 +21,7 @@ define([
     );
 
     validator.addRule(
-        'orba-input-mask-complete',
+        'lingaro-input-mask-complete',
         function (value, params) {
             return value === '' || $(params.selector).inputmask("isComplete");
         },

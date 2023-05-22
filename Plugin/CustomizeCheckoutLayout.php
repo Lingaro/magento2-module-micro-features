@@ -1,17 +1,17 @@
 <?php
 
 /**
- * @copyright Copyright © 2021 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Plugin;
+namespace Lingaro\MicroFeatures\Plugin;
 
 use Magento\Checkout\Block\Checkout\LayoutProcessor;
 use Magento\Checkout\Helper\Data as CheckoutHelper;
-use Orba\MicroFeatures\Model\Config;
+use Lingaro\MicroFeatures\Model\Config;
 
 class CustomizeCheckoutLayout
 {
@@ -51,7 +51,7 @@ class CustomizeCheckoutLayout
         ['inputMask']['mask'] = $mask;
         $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']
         ['shippingAddress']['children']['shipping-address-fieldset']['children'][$field]['validation']
-        ['orba-input-mask-complete']['selector'] = '[name="shippingAddress.' . $field . '"] [name="' . $field . '"]';
+        ['lingaro-input-mask-complete']['selector'] = '[name="shippingAddress.' . $field . '"] [name="' . $field . '"]';
 
         if ($this->checkoutHelper->isDisplayBillingOnPaymentMethodAvailable()) {
             if (isset($jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
@@ -71,7 +71,7 @@ class CustomizeCheckoutLayout
                         ['form-fields']['children'][$field]['config']['inputMask']['mask'] = $mask;
                         $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']
                         ['children']['payment']['children']['payments-list']['children'][$key]['children']
-                        ['form-fields']['children'][$field]['validation']['orba-input-mask-complete']['selector']
+                        ['form-fields']['children'][$field]['validation']['lingaro-input-mask-complete']['selector']
                             = '[name="billingAddress' . $methodCode . '.' . $field . '"] [name="' . $field . '"]';
                     }
                 }
@@ -91,7 +91,7 @@ class CustomizeCheckoutLayout
                 ['form-fields']['children'][$field]['config']['inputMask']['mask'] = $mask;
                 $jsLayout['components']['checkout']['children']['steps']['children']['billing-step']['children']
                 ['payment']['children']['afterMethods']['children']['billing-address-form']['children']
-                ['form-fields']['children'][$field]['validation']['orba-input-mask-complete']
+                ['form-fields']['children'][$field]['validation']['lingaro-input-mask-complete']
                 ['selector'] = '[name="billingAddress' . $methodCode . '.' . $field . '"] [name="' . $field . '"]';
             }
         }

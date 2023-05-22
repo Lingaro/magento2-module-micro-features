@@ -1,18 +1,18 @@
 <?php
 
 /**
- * @copyright Copyright © 2021 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Plugin;
+namespace Lingaro\MicroFeatures\Plugin;
 
 use Magento\Config\Block\System\Config\Form\Field;
 use Magento\Framework\Data\Form\Element\AbstractElement;
 use Magento\Framework\View\Asset\Repository;
-use Orba\MicroFeatures\Model\System\Config\BrandProvider;
+use Lingaro\MicroFeatures\Model\System\Config\BrandProvider;
 
 class BrandAdminhtmlConfigField
 {
