@@ -1,11 +1,11 @@
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 define([
     'jquery',
-    'Orba_MicroFeatures/js/upsert-qty/widget'
+    'Lingaro_MicroFeatures/js/upsert-qty/widget'
 ], function ($) {
     'use strict';
 

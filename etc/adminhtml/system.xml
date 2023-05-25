@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -14,8 +14,8 @@
                 <field id="admin_only" translate="label" type="multiselect" sortOrder="10"
 					   showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
                     <label>Admin Only</label>
-                    <source_model>Orba\MicroFeatures\Model\System\Config\Source\PaymentMethod</source_model>
-                    <attribute type="brand">orba</attribute>
+                    <source_model>Lingaro\MicroFeatures\Model\System\Config\Source\PaymentMethod</source_model>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
             </group>
         </section>
@@ -25,7 +25,7 @@
 					   showInDefault="1" showInWebsite="1" canRestore="1">
                     <label>Show Link in Customer Account</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
             </group>
             <group id="frontend">
@@ -33,13 +33,13 @@
                        showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Enable Product Comparison</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
                 <field id="enable_upsert_qty" translate="label" type="select" sortOrder="810"
                        showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Enable Upsert Quantity</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
             </group>
         </section>
@@ -50,7 +50,7 @@
                     <label>Is Login as Customer opt-in needed</label>
                     <comment>If set to "No", Login as Customer opt-in checkbox will not be visible on frontend, and admin users will be able to log in as any customer.</comment>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
                 <field id="shopping_assistance_checkbox_title">
                     <depends>
@@ -70,7 +70,7 @@
 					   showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Always Expand Items Block</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-					<attribute type="brand">orba</attribute>
+					<attribute type="brand">lingaro</attribute>
                 </field>
             </group>
         </section>
@@ -80,13 +80,13 @@
                        showInDefault="1" showInWebsite="1" canRestore="1">
                     <label>Telephone Input Mask</label>
                     <comment>Example: 999-999-9999</comment>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
                 <field id="postcode_input_mask" translate="label comment" type="text" sortOrder="810"
                        showInDefault="1" showInWebsite="1" canRestore="1">
                     <label>Postcode Input Mask</label>
                     <comment>Example: 99999[-9999]</comment>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
             </group>
         </section>
@@ -99,7 +99,7 @@
                     <depends>
                         <field id="newsletter/general/active">1</field>
                     </depends>
-                    <attribute type="brand">orba</attribute>
+                    <attribute type="brand">lingaro</attribute>
                 </field>
             </group>
         </section>

@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @copyright Copyright © 2022 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Controller\UpsertQty;
+namespace Lingaro\MicroFeatures\Controller\UpsertQty;
 
 use Magento\Framework\App\Action\Action;
 use Magento\Framework\App\Action\Context;
@@ -19,7 +19,7 @@ use Magento\Framework\App\ResponseInterface;
 use Magento\Framework\Controller\ResultFactory;
 use Magento\Framework\Controller\ResultInterface;
 use Magento\Framework\Data\Form\FormKey\Validator as FormKeyValidator;
-use Orba\MicroFeatures\Action\UpsertQuantity;
+use Lingaro\MicroFeatures\Action\UpsertQuantity;
 
 class Index extends Action implements CsrfAwareActionInterface, HttpPostActionInterface
 {

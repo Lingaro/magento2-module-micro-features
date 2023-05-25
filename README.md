@@ -1,7 +1,7 @@
 Magento 2 Micro Features Module
 ============================
 
-Created by [Orba](https://orba.co)
+Created by [Lingaro](https://lingarogroup.com/)
 
 ## Features list
 
@@ -24,9 +24,9 @@ One can add branding (logo) to system.xml config field by applying the following
 </field>
 ```
 
-where `{{ brand_code }}` is a code of the brand defined in `etc/adminhtml/di.xml` inside `Orba\MicroFeatures\Model\System\Config\BrandProvider` type.
+where `{{ brand_code }}` is a code of the brand defined in `etc/adminhtml/di.xml` inside `Lingaro\MicroFeatures\Model\System\Config\BrandProvider` type.
 
-In this module brand with code `orba` is provided. All custom configs added by this module are branded using it.
+In this module brand with code `lingaro` is provided. All custom configs added by this module are branded using it.
 
 You can specify merchant's brand in your custom module for merchant's custom configs.
 
@@ -51,7 +51,7 @@ In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > En
 
 In admin panel, in `Stores > Configuration > Customers > Customer Configuration > Name and Address Options > Telephone Input Mask / Postcode Input Mask` one can add input masks for phone number and postcode fields visible in Address Book (in My Account) and in Checkout.
 
-Watchout: The config is for projects in which in one website you can create addresses for one specific country. For multi-country websites you need to customize `\Orba\MicroFeatures\ViewModel\Customer\Address\Form\InputMask`.
+Watchout: The config is for projects in which in one website you can create addresses for one specific country. For multi-country websites you need to customize `\Lingaro\MicroFeatures\ViewModel\Customer\Address\Form\InputMask`.
 
 ### 9. Config for enabling "Upsert quantity" widget in place of "Add to cart" buttons
 

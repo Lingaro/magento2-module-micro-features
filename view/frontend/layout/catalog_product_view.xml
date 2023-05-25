@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -10,12 +10,12 @@
     <body>
         <referenceContainer name="product.info.form.content">
             <block class="Magento\Catalog\Block\Product\View"
-                   name="product.info.addtocart.orba.upsert_qty"
+                   name="product.info.addtocart.lingaro.upsert_qty"
                    ifconfig="catalog/frontend/enable_upsert_qty"
-                   template="Orba_MicroFeatures::upsert_qty/view.phtml"
+                   template="Lingaro_MicroFeatures::upsert_qty/view.phtml"
                    after="product.info.addtocart">
                 <arguments>
-                    <argument name="view_model" xsi:type="object">Orba\MicroFeatures\ViewModel\UpsertQtyInitializer</argument>
+                    <argument name="view_model" xsi:type="object">Lingaro\MicroFeatures\ViewModel\UpsertQtyInitializer</argument>
                 </arguments>
             </block>
         </referenceContainer>

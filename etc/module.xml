@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
-    <module name="Orba_MicroFeatures">
+    <module name="Lingaro_MicroFeatures">
         <sequence>
             <module name="Magento_Paypal"/>
             <module name="Magento_Sales"/>
