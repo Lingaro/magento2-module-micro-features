@@ -1,18 +1,25 @@
 {
-  "name": "orba/magento2-module-micro-features",
-  "version": "1.1.0",
+  "name": "lingaro/magento2-module-micro-features",
+  "version": "2.0.0",
   "description": "Magento 2 Micro Features Module",
   "require": {
     "php": "~7.4.0",
     "magento/framework": "103.0.*"
   },
   "type": "magento2-module",
+  "license": "MIT",
+  "authors": [
+      {
+          "name": "Lingaro sp. z o.o.",
+          "homepage": "https://lingarogroup.com/"
+      }
+  ],
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "Orba\\MicroFeatures\\": ""
+      "Lingaro\\MicroFeatures\\": ""
     }
   }
 }

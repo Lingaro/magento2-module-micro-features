@@ -1,20 +1,20 @@
 <?php
 
 /**
- * @copyright Copyright © 2022 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\ViewModel;
+namespace Lingaro\MicroFeatures\ViewModel;
 
 use Magento\Catalog\Api\Data\ProductInterface;
 use Magento\Framework\UrlInterface;
 use Magento\Framework\View\Element\Block\ArgumentInterface;
 use Magento\Framework\Serialize\Serializer\Json;
-use Orba\MicroFeatures\Action\UpsertQuantity;
-use Orba\MicroFeatures\Model\Config;
+use Lingaro\MicroFeatures\Action\UpsertQuantity;
+use Lingaro\MicroFeatures\Model\Config;
 
 use function in_array;
 
@@ -51,11 +51,11 @@ class UpsertQtyInitializer implements ArgumentInterface
     public function getJsonConfig(string $targetSelector): string
     {
         return $this->serializer->serialize([
-            'Orba_MicroFeatures/js/upsert-qty/widget-initializer' => [
+            'Lingaro_MicroFeatures/js/upsert-qty/widget-initializer' => [
                 'targetSelector' => $targetSelector,
-                'wrapperClass' => 'control orba-upsert-qty-wrapper',
+                'wrapperClass' => 'control lingaro-upsert-qty-wrapper',
                 'widgetConfig' => [
-                    'url' => $this->url->getUrl('orbaMicroFeatures/upsertQty'),
+                    'url' => $this->url->getUrl('lingaroMicroFeatures/upsertQty'),
                     'addToCartButtonText' => __('Add to Cart'),
                     'updateCartButtonText' => __('Update Cart'),
                     'productType' => $this->product->getTypeId(),

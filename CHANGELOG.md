@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2023-05-17
+### Changed
+- Rebranded the module to Lingaro with new major version released
+- Changed the css class from orba to lingaro.
+- Changed the branding logo from Orba to Lingaro
+
 ## [1.1.0] - 2022-02-08
 ### Added
 - Feature: Config for enabling "Upsert quantity" widget in place of "Add to cart" buttons [ZZ12-89](https://orba.atlassian.net/browse/ZZ12-89)

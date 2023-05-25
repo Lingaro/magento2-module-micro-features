@@ -1,43 +1,43 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2021 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Sales\Model\Order\Status\History">
-        <plugin name="Orba_MicroFeatures::AddCreatedByBeforeOrderStatusHistorySave"
-                type="Orba\MicroFeatures\Plugin\AddCreatedByBeforeOrderStatusHistorySave"/>
+        <plugin name="Lingaro_MicroFeatures::AddCreatedByBeforeOrderStatusHistorySave"
+                type="Lingaro\MicroFeatures\Plugin\AddCreatedByBeforeOrderStatusHistorySave"/>
     </type>
     <type name="Magento\Sales\Model\Order">
-        <plugin name="Orba_MicroFeatures::AddAuthorToAdminOrderStatusHistory"
-                type="Orba\MicroFeatures\Plugin\AddAuthorToAdminOrderStatusHistory"/>
+        <plugin name="Lingaro_MicroFeatures::AddAuthorToAdminOrderStatusHistory"
+                type="Lingaro\MicroFeatures\Plugin\AddAuthorToAdminOrderStatusHistory"/>
     </type>
     <type name="Magento\Config\Block\System\Config\Form\Field">
-        <plugin name="Orba_MicroFeatures::BrandAdminhtmlConfigField"
-                type="Orba\MicroFeatures\Plugin\BrandAdminhtmlConfigField"/>
+        <plugin name="Lingaro_MicroFeature::BrandAdminhtmlConfigField"
+                type="Lingaro\MicroFeatures\Plugin\BrandAdminhtmlConfigField"/>
     </type>
-    <virtualType name="Orba\MicroFeatures\Model\System\Config\Brand\Orba"
-                 type="Orba\MicroFeatures\Model\System\Config\Brand">
+    <virtualType name="Lingaro\MicroFeatures\Model\System\Config\Brand\Lingaro"
+                 type="Lingaro\MicroFeatures\Model\System\Config\Brand">
         <arguments>
-            <argument name="logo" xsi:type="string">Orba_MicroFeatures::images/orba_logo.png</argument>
+            <argument name="logo" xsi:type="string">Lingaro_MicroFeatures::images/lingaro_logo.png</argument>
         </arguments>
     </virtualType>
-    <type name="Orba\MicroFeatures\Model\System\Config\BrandProvider">
+    <type name="Lingaro\MicroFeatures\Model\System\Config\BrandProvider">
         <arguments>
             <argument name="brands" xsi:type="array">
-                <item name="orba" xsi:type="object">Orba\MicroFeatures\Model\System\Config\Brand\Orba</item>
+                <item name="lingaro" xsi:type="object">Lingaro\MicroFeatures\Model\System\Config\Brand\Lingaro</item>
             </argument>
         </arguments>
     </type>
     <type name="Magento\LoginAsCustomerAssistance\Model\IsAssistanceEnabled">
-        <plugin name="Orba_MicroFeatures::LoginAsCustomer_CustomizeAdminActionAllowance"
-                type="Orba\MicroFeatures\Plugin\LoginAsCustomer\CustomizeAdminActionAllowance"/>
+        <plugin name="Lingaro_MicroFeature::LoginAsCustomer_CustomizeAdminActionAllowance"
+                type="Lingaro\MicroFeatures\Plugin\LoginAsCustomer\CustomizeAdminActionAllowance"/>
     </type>
     <type name="Magento\Ui\Component\Form\Field">
-        <plugin name="Orba_MicroFeatures::LoginAsCustomer_CustomizeAdminhtmlCheckboxRendering"
-                type="Orba\MicroFeatures\Plugin\LoginAsCustomer\CustomizeAdminhtmlCheckboxRendering"/>
+        <plugin name="Lingaro_MicroFeature::LoginAsCustomer_CustomizeAdminhtmlCheckboxRendering"
+                type="Lingaro\MicroFeatures\Plugin\LoginAsCustomer\CustomizeAdminhtmlCheckboxRendering"/>
     </type>
 </config>

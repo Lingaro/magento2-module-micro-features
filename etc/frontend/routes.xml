@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <!--
 /**
- * @copyright Copyright © 2022 Orba. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
     <router id="standard">
-        <route id="orba_micro_features" frontName="orbaMicroFeatures">
-            <module name="Orba_MicroFeatures" />
+        <route id="lingaro_micro_features" frontName="lingaroMicroFeatures">
+            <module name="Lingaro_MicroFeatures" />
         </route>
     </router>
 </config>

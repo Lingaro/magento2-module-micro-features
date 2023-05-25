@@ -1,15 +1,15 @@
 <?php
 
 /**
- * @copyright Copyright © 2021 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Plugin\ProductCompare;
+namespace Lingaro\MicroFeatures\Plugin\ProductCompare;
 
-use Orba\MicroFeatures\Model\Config;
+use Lingaro\MicroFeatures\Model\Config;
 
 class ProceedPreventer
 {

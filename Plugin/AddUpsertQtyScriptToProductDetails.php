@@ -1,19 +1,19 @@
 <?php
 
 /**
- * @copyright Copyright © 2022 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Plugin;
+namespace Lingaro\MicroFeatures\Plugin;
 
 use Magento\Catalog\Block\Product\AbstractProduct;
 use Magento\Catalog\Model\Product;
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\View\LayoutInterface;
-use Orba\MicroFeatures\ViewModel\UpsertQtyInitializer;
+use Lingaro\MicroFeatures\ViewModel\UpsertQtyInitializer;
 
 class AddUpsertQtyScriptToProductDetails
 {
@@ -44,7 +44,7 @@ class AddUpsertQtyScriptToProductDetails
                 ]
             ]
         );
-        $block->setTemplate('Orba_MicroFeatures::upsert_qty/list.phtml');
+        $block->setTemplate('Lingaro_MicroFeatures::upsert_qty/list.phtml');
         return $result . $block->toHtml();
     }
 }

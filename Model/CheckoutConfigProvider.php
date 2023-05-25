@@ -1,13 +1,13 @@
 <?php
 
 /**
- * @copyright Copyright © 2021 Orba Sp. z o.o. All rights reserved.
- * @author    info@orba.co
+ * Copyright © 2023 Lingaro sp. z o.o. All rights reserved.
+ * See LICENSE for license details.
  */
 
 declare(strict_types=1);
 
-namespace Orba\MicroFeatures\Model;
+namespace Lingaro\MicroFeatures\Model;
 
 use Magento\Checkout\Model\ConfigProviderInterface;
 
@@ -26,7 +26,7 @@ class CheckoutConfigProvider implements ConfigProviderInterface
     public function getConfig(): array
     {
         return [
-            'orbaMicroFeatures' => [
+            'lingaroMicroFeatures' => [
                 'itemsBlockExpandedByDefault' => $this->config->shouldAlwaysExpandItemsBlockOnCheckout()
             ]
         ];

@@ -1,5 +1,5 @@
 COMPONENT_NAME:=module-micro-features
-COMPONENT:=orba/magento2-module-micro-features
+COMPONENT:=lingaro/magento2-module-micro-features
 SKELETON:=
 
 TARGET_PATH:=source/packages/$(COMPONENT_NAME)
