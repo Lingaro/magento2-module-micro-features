@@ -1,6 +1,6 @@
 COMPONENT_NAME:=module-micro-features
 COMPONENT:=lingaro/magento2-module-micro-features
-SKELETON:=
+ENV_REPOSITORY:=
 
 TARGET_PATH:=source/packages/$(COMPONENT_NAME)
 
@@ -21,14 +21,14 @@ all:
 
 	$(TAR) -czvf $(ARCHIVE) .
 	$(RM) ..?* .[!.]* *
-	$(GIT) clone $(SKELETON) .
+	$(GIT) clone $(ENV_REPOSITORY) .
 	$(MAKE) new \
 		project=$(COMPONENT_NAME) \
-		version=2.4.2-p1 \
+		version=2.4.5-p1 \
 		edition=community \
+		static_cases=packages/$(COMPONENT_NAME) \
 		unit_cases=packages/$(COMPONENT_NAME)/Test/Unit \
-		integration_cases=packages/$(COMPONENT_NAME)/Test/Integration \
-		ca=0
+		integration_cases=packages/$(COMPONENT_NAME)/Test/Integration
 	$(MKDIR) $(TARGET_PATH)
 	$(TAR) -xzvf $(ARCHIVE) -C $(TARGET_PATH)
 	$(RM) $(TMPDIR)
