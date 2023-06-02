@@ -60,3 +60,13 @@ In admin panel, in `Stores > Configuration > Catalog > Catalog > Storefront > En
 ### 10. Config for enabling AJAX for Footer Newsletter form
 
 In admin panel, in `Stores > Configuration > Customers > Newsletter > General Options > Enable AJAX in Footer Form` one can force Footer Newsletter form to use AJAX and not reload page after each submission. 
+
+
+## Supported Magento versions
+
+* 2.4.0
+* 2.4.1
+* 2.4.2
+* 2.4.3
+* 2.4.4
+* 2.4.5
